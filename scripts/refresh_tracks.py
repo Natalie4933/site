@@ -40,6 +40,11 @@ def main():
     with urllib.request.urlopen(request, timeout=45) as response:
         page = response.read().decode('utf-8')
     tracks = extract_tracks(page)
+    # The artist page embeds only the first 12 posts; do not erase known
+    # tracks loaded from subsequent pages when refreshing the first page.
+    previous = json.loads((ROOT / 'tracks.json').read_text())
+    seen = {track['id'] for track in tracks}
+    tracks.extend(track for track in previous if track['id'] not in seen)
     data = json.dumps(tracks, ensure_ascii=False, indent=2)
     index = ROOT / 'index.html'
     html = index.read_text()
