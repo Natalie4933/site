@@ -1,10 +1,10 @@
-name: Publish Natalie site
+name: Update tracks and publish Natalie
 on:
   push:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
@@ -18,14 +18,27 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Refresh public music catalog
         run: |
-          if ! python scripts/refresh_tracks.py; then
-            echo '::warning::Treblo refresh unavailable; deploying the existing catalog.'
+          python scripts/refresh_tracks.py
+      - name: Save updated catalog
+        run: |
+          git config user.name "Natalie Site Bot"
+          git config user.email "natalie-site-bot@users.noreply.github.com"
+          git add tracks.json index.html
+          if git diff --cached --quiet; then
+            echo "Catalog already up to date." >> "$GITHUB_STEP_SUMMARY"
+          else
+            git commit -m "Refresh Natalie tracks from Treblo"
+            git push origin HEAD:main
+            echo "Updated catalog saved and ready to deploy." >> "$GITHUB_STEP_SUMMARY"
           fi
+          python -c 'import json; print("Tracks in catalog:", len(json.load(open("tracks.json"))))' >> "$GITHUB_STEP_SUMMARY"
       - name: Prepare static output
         run: |
           mkdir -p _site

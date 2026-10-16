@@ -16,12 +16,14 @@ def extract_tracks(page):
     seen = set()
     for payload in re.findall(r'self\.__next_f\.push\(\[1,("(?:[^"\\]|\\.)*")\]\)', page):
         text = json.loads(payload)
-        for match in re.finditer(r'\{"id":"[^"]+","artistUsername":"natalie4933"', text):
+        for match in re.finditer(r'\{', text):
             try:
                 item, _ = decoder.raw_decode(text[match.start():])
             except ValueError:
                 continue
-            if item['id'] in seen or not item.get('songPath') or item.get('visibility') != 'public':
+            if not isinstance(item, dict) or item.get('artistUsername') != 'natalie4933':
+                continue
+            if item.get('id') in seen or not item.get('songPath') or item.get('visibility') != 'public':
                 continue
             if not item['songPath'].startswith('https://cdn.treblo.com/'):
                 continue
