@@ -1,5 +1,45 @@
 [
   {
+    "id": "e326e1a0-97d7-4d19-801e-2e3ead3c00f9",
+    "title": "Northern Pulse",
+    "audio": "https://cdn.treblo.com/generations3/audio_63d35a9b-a519-44f9-825e-eb98969b5a3a_1.ogg",
+    "artwork": "https://scdn.treblo.com/images/uploadart-c1a70f65-9a92-4982-bc47-90c45795bfd2.png",
+    "duration": 269,
+    "tags": [],
+    "url": "https://treblo.com/song/e326e1a0-97d7-4d19-801e-2e3ead3c00f9"
+  },
+  {
+    "id": "46390068-8e53-424b-b476-bf4ffbada0e8",
+    "title": "Breath of the Fjord",
+    "audio": "https://cdn.treblo.com/generations3/audio_bca48afb-8f65-4265-b6fb-65911696d3ab_0.ogg",
+    "artwork": "https://scdn.treblo.com/images/uploadart-37a3f388-e2ea-4dfc-b38d-627669d1fdd0.png",
+    "duration": 200,
+    "tags": [],
+    "url": "https://treblo.com/song/46390068-8e53-424b-b476-bf4ffbada0e8"
+  },
+  {
+    "id": "f1434f63-52d8-4769-9077-f2fb02500f24",
+    "title": "Where The Sky Remembers",
+    "audio": "https://cdn.treblo.com/generations3/audio_652d9cb1-d56f-44a3-85c3-d614edcaaf82_0.ogg",
+    "artwork": "https://scdn.treblo.com/images/uploadart-2a8962d6-7667-44e0-85f6-570b3a5ac7ae.png",
+    "duration": 267,
+    "tags": [
+      "hypnotic"
+    ],
+    "url": "https://treblo.com/song/f1434f63-52d8-4769-9077-f2fb02500f24"
+  },
+  {
+    "id": "f01b860e-e9c8-436b-8a00-19d332a0ac15",
+    "title": "Beyond The Veil",
+    "audio": "https://cdn.treblo.com/generations3/audio_3f5e8a2a-b543-4431-9ba5-d7f1f04d8c7e_1.ogg",
+    "artwork": "https://scdn.treblo.com/images/uploadart-5bab3de6-41ca-4c13-bcf8-7c95a203b241.png",
+    "duration": 259,
+    "tags": [
+      "hypnotic"
+    ],
+    "url": "https://treblo.com/song/f01b860e-e9c8-436b-8a00-19d332a0ac15"
+  },
+  {
     "id": "50250d10-05ef-4ea8-98a7-3a7b391a09ea",
     "title": "Alien Temple",
     "audio": "https://cdn.treblo.com/generations3/audio_bac56890-9cbc-47e9-bec3-f7a726825220_0.ogg",
