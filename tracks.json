@@ -1,5 +1,59 @@
 [
   {
+    "id": "5e8c5f39-528f-478d-a9d8-bd824b936672",
+    "title": "The Warmth We Leave Behind",
+    "audio": "https://cdn.treblo.com/generations3/audio_c8d13069-f71e-4377-b6fc-a3ee21ea399d_0.ogg",
+    "artwork": "https://scdn.treblo.com/images/uploadart-f8db9fb9-b4c7-4341-88a4-18c803345891.png",
+    "duration": 241,
+    "tags": [
+      "atmospheric",
+      "spiritual",
+      "hypnotic",
+      "chants",
+      "sacred"
+    ],
+    "url": "https://treblo.com/song/5e8c5f39-528f-478d-a9d8-bd824b936672"
+  },
+  {
+    "id": "c3f3f238-eced-460a-a4ad-96413ee5465f",
+    "title": "A Slow Becoming",
+    "audio": "https://cdn.treblo.com/generations3/audio_f7f3d32e-1468-41e8-a88a-ca0ef1ce7940_1.ogg",
+    "artwork": "https://scdn.treblo.com/images/uploadart-b3e1c093-d21f-4399-8a39-2c4b01df77f7.png",
+    "duration": 264,
+    "tags": [
+      "atmospheric",
+      "spiritual",
+      "hypnotic"
+    ],
+    "url": "https://treblo.com/song/c3f3f238-eced-460a-a4ad-96413ee5465f"
+  },
+  {
+    "id": "c16f1235-b516-4f5b-8086-23be5b85f489",
+    "title": "Between Two Horizons",
+    "audio": "https://cdn.treblo.com/generations3/audio_677df252-d626-4841-a42a-ae0b25950bea_0.ogg",
+    "artwork": "https://scdn.treblo.com/images/uploadart-cad542af-36a0-4149-8c99-978029f0af64.png",
+    "duration": 250,
+    "tags": [
+      "atmospheric",
+      "spiritual",
+      "hypnotic"
+    ],
+    "url": "https://treblo.com/song/c16f1235-b516-4f5b-8086-23be5b85f489"
+  },
+  {
+    "id": "0cff1d07-cc24-49b9-aa4f-dfdd6136d7b7",
+    "title": "Everything in Waves",
+    "audio": "https://cdn.treblo.com/generations3/audio_a407dfdd-bec3-4973-bc0f-e48a95ad30a6_0.ogg",
+    "artwork": "https://scdn.treblo.com/images/uploadart-c61c4b9a-596f-4ff6-8a6c-8967845026f1.png",
+    "duration": 272,
+    "tags": [
+      "atmospheric",
+      "spiritual",
+      "hypnotic"
+    ],
+    "url": "https://treblo.com/song/0cff1d07-cc24-49b9-aa4f-dfdd6136d7b7"
+  },
+  {
     "id": "e326e1a0-97d7-4d19-801e-2e3ead3c00f9",
     "title": "Northern Pulse",
     "audio": "https://cdn.treblo.com/generations3/audio_63d35a9b-a519-44f9-825e-eb98969b5a3a_1.ogg",
